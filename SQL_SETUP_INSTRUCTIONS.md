@@ -28,7 +28,7 @@ Click the **Run** button (or press `Ctrl+Enter`)
 You should see:
 ```
 ✓ Success: Table created
-✓ Success: 3 rows inserted
+✓ Success: 4 rows inserted
 ```
 
 ### 5. Verify the Data
@@ -44,7 +44,7 @@ At the bottom of the SQL editor, you'll see a preview showing both trips inserte
 - FAQs and inclusions/exclusions
 - Timestamps for created_at and updated_at
 
-### 2. Three Sample Trips Inserted
+### 2. Four Sample Trips Inserted
 1. **Leh Ladakh Expedition** - ₹28,999 (11 Days, Advanced)
    - Highest motorable passes: Khardung La (18,380 ft)
    - Includes Pangong Lake & Nubra Valley
@@ -61,6 +61,15 @@ At the bottom of the SQL editor, you'll see a preview showing both trips inserte
    - Stunning Chandratal Lake
    - Ancient cliff-side monasteries
    - Best season: May to September
+
+4. **Spiti – Zanskar Valley Expedition** - ₹62,000 (12 Days, Extreme)
+   - Ultimate high-altitude extreme adventure
+   - Shinkhula Pass (15,240 ft) into Zanskar
+   - Legendary Phuktal Monastery trek
+   - Drang Drung Glacier exploration
+   - Remote villages and raw wilderness
+   - Best season: May to September
+   - **HARDEST trip offered by Blacksheep**
 
 ### 3. Security Policies (RLS)
 - Public read access enabled

@@ -242,7 +242,87 @@ INSERT INTO trips (
   ]'::jsonb
 );
 
--- Step 4: Verify the data was inserted
+-- Step 4: Insert Spiti – Zanskar Valley Expedition
+-- ============================================================================
+
+INSERT INTO trips (
+  title,
+  region,
+  difficulty,
+  duration,
+  days,
+  altitude,
+  price,
+  image,
+  description,
+  itinerary,
+  inclusions,
+  exclusions,
+  "bestFor",
+  faqs
+) VALUES (
+  'Spiti – Zanskar Valley Expedition',
+  'Zanskar',
+  'Extreme',
+  '12 Days / 11 Nights',
+  12,
+  '15,000+ ft',
+  62000,
+  '/images/zanskar.jpg',
+  'The ultimate high-altitude expedition into the most remote corners of the Himalayas. Ride to legendary monasteries carved into cliffs, cross glaciers, traverse remote passes, and discover the raw essence of Zanskar. Experience the ride of your lifetime.',
+  '[
+    {"day": 1, "title": "Arrival | Manali", "description": "Arrive in Manali, check in, rest, and attend briefing + bike allocation. Meet your ride crew, inspect machines, and prepare for the journey ahead.", "altitude": "6,726 ft"},
+    {"day": 2, "title": "Into the Mountains | Manali → Jibhi", "description": "Ride through forest corridors and winding Himalayan roads toward the hidden hamlet of Jibhi. Forest scenery and mountain air.", "altitude": "7,000 ft"},
+    {"day": 3, "title": "Borderland Ride | Jibhi → Chitkul", "description": "Long, scenic ride through dramatic terrain toward India''s last village near the border. Expect raw valleys, river roads, and alpine views.", "altitude": "11,320 ft"},
+    {"day": 4, "title": "Entering the High Desert | Chitkul → Nako", "description": "Landscape transforms from green valleys to stark mountain desert as you approach Spiti''s gateway. Witness the dramatic geological shift.", "altitude": "11,000 ft"},
+    {"day": 5, "title": "Monasteries & Cliffs | Nako → Kaza via Lalung, Gue & Dhankar", "description": "Ride past ancient monasteries perched on cliffs and witness Spiti''s most iconic spiritual landmarks. Dhankar Monastery is breathtaking.", "altitude": "12,500 ft"},
+    {"day": 6, "title": "Highest Villages Ride | Kaza Local", "description": "Explore Langza, Komic, Hikkim & Key Monastery. Ride to some of the highest inhabited villages in the world. Visit the world''s highest post office.", "altitude": "12,860 ft"},
+    {"day": 7, "title": "Lake of the Moon | Kaza → Chandratal via Kibber & Chicham Bridge", "description": "Cross one of Asia''s highest bridges and continue toward Chandratal, the legendary high-altitude lake. Stunning moonlit landscapes.", "altitude": "13,050 ft"},
+    {"day": 8, "title": "Into Lahaul | Chandratal → Jispa", "description": "Ride along glacier-fed rivers and rugged mountain terrain into Lahaul Valley. Experience pristine wilderness and raw Himalayan beauty.", "altitude": "11,500 ft"},
+    {"day": 9, "title": "Crossing Into Zanskar | Jispa → Padum via Shinkhula Pass", "description": "High-altitude pass crossing into Zanskar Valley, one of the most remote regions of the Himalayas. This is the expedition you came for.", "altitude": "15,240 ft"},
+    {"day": 10, "title": "Glacier Exploration Ride | Padum Local", "description": "Visit Drang Drung Glacier and Pensila Top. A day of raw Himalayan landscapes and high-altitude exploration. Photography paradise.", "altitude": "14,800 ft"},
+    {"day": 11, "title": "Sacred Trail | Padum → Purne → Trek to Phuktal Monastery", "description": "Ride to Purne and trek to the legendary cliff-side monastery carved into the mountains. Spiritual awakening guaranteed.", "altitude": "12,320 ft"},
+    {"day": 12, "title": "The Grand Return | Purne → Manali via Atal Tunnel", "description": "Final ride through dramatic mountain roads and tunnels back to Manali. Expedition concludes with memories carved into your story forever.", "altitude": "9,200 ft"}
+  ]'::jsonb,
+  ARRAY[
+    'Royal Enfield 411cc / 450cc bike',
+    'Backup vehicle with mechanic & marshal',
+    'All accommodations (hotels & high-altitude camps)',
+    'Mineral water while riding',
+    'Oxygen cylinder & comprehensive first aid',
+    'Fuel for entire journey',
+    'Pickup & drop from Manali',
+    'Breakfast & dinner daily',
+    'Trekking guide to Phuktal Monastery'
+  ],
+  ARRAY[
+    'Lunch',
+    'Drinks',
+    'Personal expenses',
+    'Trekking gear rental',
+    'Travel insurance',
+    'Extra costs due to weather or natural disasters'
+  ],
+  ARRAY[
+    'Extreme adventure seekers',
+    'Expert riders with high-altitude experience',
+    'Professional photographers',
+    'Spiritual explorers',
+    'Off-road champions',
+    'Those seeking ultimate Himalayan conquest'
+  ],
+  '[
+    {"question": "Is this trip really extreme?", "answer": "Yes. This is our most challenging expedition. You''ll cross 15,000+ ft passes, ride in remote deserts, trek to isolated monasteries, and experience true isolation. Only for riders with serious altitude and riding experience."},
+    {"question": "What if I get altitude sickness?", "answer": "We have oxygen cylinders, first aid kits, and a trained medical marshal. We acclimatize gradually and have backup plans. However, severe altitude sickness may require evacuation by helicopter."},
+    {"question": "Can beginners ride this?", "answer": "Absolutely not. We require minimum 2 years of high-altitude riding experience, comfort with extreme weather, and excellent physical fitness. This is not for beginners."},
+    {"question": "What about the weather?", "answer": "The trip runs only May-September. Even then, weather can change dramatically. We monitor closely and reroute if necessary. Your safety is paramount."},
+    {"question": "What if a pass is closed?", "answer": "If Shinkhula Pass is closed, we have backup routes. This may add ₹2,000-3,000 per rider and change the itinerary."},
+    {"question": "What about the trek to Phuktal?", "answer": "The trek is moderate (3-4 hours round trip). You don''t need mountaineering skills, but good fitness helps. The monastery is worth every step."},
+    {"question": "Is this the hardest ride Blacksheep offers?", "answer": "Currently, yes. This combines altitude, distance, remoteness, and spiritual significance. After this, you''ll have conquered the ultimate Himalayan challenge."}
+  ]'::jsonb
+);
+
+-- Step 5: Verify the data was inserted
 -- ============================================================================
 
 SELECT 
