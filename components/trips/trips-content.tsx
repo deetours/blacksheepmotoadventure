@@ -1,26 +1,51 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useMemo } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { trips } from "@/lib/data"
+import { useTrips } from "@/hooks/use-supabase-trips"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { Mountain, Clock, TrendingUp, IndianRupee } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
-const regions = ["All", "Ladakh", "Spiti", "Zanskar"]
-const difficulties = ["All", "Moderate", "Advanced", "Extreme"]
-
 export function TripsContent() {
+  const { trips, loading, error } = useTrips()
   const [selectedRegion, setSelectedRegion] = useState("All")
   const [selectedDifficulty, setSelectedDifficulty] = useState("All")
 
-  const filtered = trips.filter((trip) => {
-    const regionMatch = selectedRegion === "All" || trip.region === selectedRegion
-    const difficultyMatch =
-      selectedDifficulty === "All" || trip.difficulty === selectedDifficulty
-    return regionMatch && difficultyMatch
-  })
+  const regions = useMemo(() => {
+    const uniqueRegions = Array.from(new Set(trips.map((t) => t.region)))
+    return ["All", ...uniqueRegions.sort()]
+  }, [trips])
+
+  const difficulties = useMemo(() => {
+    const uniqueDifficulties = Array.from(new Set(trips.map((t) => t.difficulty)))
+    return ["All", ...uniqueDifficulties.sort()]
+  }, [trips])
+
+  const filtered = useMemo(() => {
+    return trips.filter((trip) => {
+      const regionMatch = selectedRegion === "All" || trip.region === selectedRegion
+      const difficultyMatch = selectedDifficulty === "All" || trip.difficulty === selectedDifficulty
+      return regionMatch && difficultyMatch
+    })
+  }, [trips, selectedRegion, selectedDifficulty])
+
+  if (loading) {
+    return (
+      <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12 flex items-center justify-center">
+        <p className="text-muted-foreground">Loading expeditions...</p>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12 flex items-center justify-center">
+        <p className="text-red-500">Error loading expeditions. Please try again later.</p>
+      </div>
+    )
+  }
 
   return (
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
@@ -38,9 +63,7 @@ export function TripsContent() {
         <ScrollReveal delay={0.2}>
           <div className="mt-12 flex flex-wrap gap-8">
             <div className="flex flex-col gap-2">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">
-                Region
-              </span>
+              <span className="text-xs uppercase tracking-widest text-muted-foreground">Region</span>
               <div className="flex flex-wrap gap-2">
                 {regions.map((r) => (
                   <button
@@ -60,9 +83,7 @@ export function TripsContent() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">
-                Difficulty
-              </span>
+              <span className="text-xs uppercase tracking-widest text-muted-foreground">Difficulty</span>
               <div className="flex flex-wrap gap-2">
                 {difficulties.map((d) => (
                   <button
@@ -109,9 +130,7 @@ export function TripsContent() {
                     </div>
                   </div>
                   <div className="bg-card p-6">
-                    <h3 className="font-heading text-xl uppercase tracking-wider text-foreground">
-                      {trip.title}
-                    </h3>
+                    <h3 className="font-heading text-xl uppercase tracking-wider text-foreground">{trip.title}</h3>
                     <div className="mt-4 flex flex-wrap gap-4 text-xs text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Mountain className="h-3 w-3" />

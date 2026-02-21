@@ -6,12 +6,20 @@ import { supabase } from "@/lib/supabase"
 export interface Trip {
   id: string
   title: string
-  description: string
+  region: string
+  difficulty: "Moderate" | "Advanced" | "Extreme"
   duration: string
+  days: number
+  altitude: string
   price: number
-  difficulty: string
-  image_url: string
-  created_at: string
+  image: string
+  description: string
+  itinerary: Array<{ day: number; title: string; description: string; altitude?: string }>
+  inclusions: string[]
+  exclusions: string[]
+  bestFor: string[]
+  faqs: Array<{ question: string; answer: string }>
+  created_at?: string
 }
 
 export function useTrips() {
@@ -23,7 +31,7 @@ export function useTrips() {
     const fetchTrips = async () => {
       try {
         setLoading(true)
-        const { data, error } = await supabase.from("trips").select("*")
+        const { data, error } = await supabase.from("trips").select("*").order("created_at", { ascending: false })
 
         if (error) throw error
         setTrips(data || [])
@@ -42,7 +50,7 @@ export function useTrips() {
       const { data, error } = await supabase.from("trips").insert([trip]).select()
 
       if (error) throw error
-      if (data) setTrips([...trips, ...data])
+      if (data) setTrips([data[0], ...trips])
       return data
     } catch (err) {
       setError(err instanceof Error ? err : new Error("Failed to add trip"))
