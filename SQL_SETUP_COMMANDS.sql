@@ -170,6 +170,78 @@ INSERT INTO trips (
   ]'::jsonb
 );
 
+-- Step 3: Insert Spiti Valley Expedition
+-- ============================================================================
+
+INSERT INTO trips (
+  title,
+  region,
+  difficulty,
+  duration,
+  days,
+  altitude,
+  price,
+  image,
+  description,
+  itinerary,
+  inclusions,
+  exclusions,
+  "bestFor",
+  faqs
+) VALUES (
+  'Spiti Valley Expedition',
+  'Spiti',
+  'Advanced',
+  '9 Days / 8 Nights',
+  9,
+  '11,320 ft',
+  42000,
+  '/images/spiti.jpg',
+  'Journey through one of India''s most remote and mystical valleys. Experience ancient monasteries perched on cliffs, the world''s highest post office, Asia''s tallest bridge, and pristine Himalayan landscapes.',
+  '[
+    {"day": 1, "title": "Arrival at Chandigarh → Manali", "description": "Arrive early morning at Chandigarh. Transfer to Manali by tempo. Check-in, group briefing & bike allocation. Meet your fellow riders and begin your Himalayan adventure.", "altitude": "6,726 ft"},
+    {"day": 2, "title": "Manali → Jibhi", "description": "Ride through pine forests & rolling hills. Cross Aut Tunnel toward Tirthan Valley. Experience the beauty of the lesser-known valleys. Optional visit to Jibhi Waterfall.", "altitude": "7,000 ft"},
+    {"day": 3, "title": "Jibhi → Sangla", "description": "Early start to cross Jalori Pass at 10,800 ft. Continue via Rampur & Karcham. Witness stunning Kinnaur Valley views and enjoy riverside riding along the Sutlej.", "altitude": "10,800 ft"},
+    {"day": 4, "title": "Sangla → Chitkul → Nako", "description": "Ride to Chitkul, the last Indian village near Indo-Tibet border at 11,320 ft. Lunch at ''Hindustan ka Aakhri Dhaba''. Witness Baspa River and Khab Sangam. Enter the mystical Spiti region.", "altitude": "11,320 ft"},
+    {"day": 5, "title": "Nako → Tabo", "description": "Cross Kinnaur terrains and enter Spiti Valley. Visit Nako Lake and witness the dramatic transition to desert landscapes. Discover the spiritual essence of the region.", "altitude": "10,000 ft"},
+    {"day": 6, "title": "Tabo → Dhankar → Hikkim → Kaza", "description": "Visit cliff-side Dhankar Monastery. Post a letter from the world''s highest post office in Hikkim. Lunch at Komic, the highest motorable village. Reach Kaza by evening.", "altitude": "12,500 ft"},
+    {"day": 7, "title": "Kaza → Chicham → Chandratal", "description": "Visit Key Monastery. Cross Chicham Bridge, Asia''s tallest bridge. Ride to the stunning Chandratal Lake surrounded by barren mountains. Camp under the stars.", "altitude": "13,050 ft"},
+    {"day": 8, "title": "Chandratal → Atal Tunnel → Manali", "description": "Ride along Chandra River. Cross the Atal Tunnel, one of the world''s highest. Visit Shigri Glacier views. Return to Manali.", "altitude": "12,000 ft"},
+    {"day": 9, "title": "Manali → Chandigarh", "description": "Farewell breakfast with your riding family. Group photo session. Certificate ceremony. Transfer back to Chandigarh with unforgettable memories."}
+  ]'::jsonb,
+  ARRAY[
+    'Royal Enfield 411cc bike',
+    'Backup vehicle with mechanic & marshal',
+    'Double-sharing accommodation (MAP plan)',
+    'Mineral water while riding',
+    'Oxygen cylinder & first aid',
+    'Fuel for entire tour',
+    'Pickup & drop from Chandigarh',
+    'Breakfast & dinner daily'
+  ],
+  ARRAY[
+    'Lunch',
+    'Drinks',
+    'Personal expenses',
+    'Extra costs due to weather or natural disasters'
+  ],
+  ARRAY[
+    'Adventure seekers',
+    'Experienced riders',
+    'Photography enthusiasts',
+    'Spiritual explorers',
+    'Off-road enthusiasts'
+  ],
+  '[
+    {"question": "Is Spiti Valley accessible year-round?", "answer": "No. The best time is May to September when all passes are open. In winter, the valley is cut off due to heavy snow."},
+    {"question": "What if Kunzum Pass is closed?", "answer": "If Kunzum Pass is closed due to weather, we divert via Kalpa. There''s an additional charge of ₹1,000 per bike for this alternate route."},
+    {"question": "What about altitude sickness?", "answer": "We start from Chandigarh at low altitude and gradually climb. Our road captain is trained in altitude management. We carry oxygen cylinders and first aid kits."},
+    {"question": "Can I book this trip solo?", "answer": "Yes! Solo riders are welcome. You''ll be paired with another rider for shared accommodation (double-sharing)."},
+    {"question": "What if weather affects Chandratal camping?", "answer": "If weather is unfavorable, we provide backup accommodation at Batal instead of camping at Chandratal Lake."},
+    {"question": "How experienced do I need to be?", "answer": "You need at least 6 months of riding experience on highways. Comfort with high altitude and off-road conditions is essential."}
+  ]'::jsonb
+);
+
 -- Step 4: Verify the data was inserted
 -- ============================================================================
 

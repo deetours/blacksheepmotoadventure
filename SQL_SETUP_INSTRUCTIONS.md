@@ -28,7 +28,7 @@ Click the **Run** button (or press `Ctrl+Enter`)
 You should see:
 ```
 ✓ Success: Table created
-✓ Success: 2 rows inserted
+✓ Success: 3 rows inserted
 ```
 
 ### 5. Verify the Data
@@ -44,9 +44,23 @@ At the bottom of the SQL editor, you'll see a preview showing both trips inserte
 - FAQs and inclusions/exclusions
 - Timestamps for created_at and updated_at
 
-### 2. Two Sample Trips Inserted
+### 2. Three Sample Trips Inserted
 1. **Leh Ladakh Expedition** - ₹28,999 (11 Days, Advanced)
+   - Highest motorable passes: Khardung La (18,380 ft)
+   - Includes Pangong Lake & Nubra Valley
+   - Best season: Mid-July to Late September
+
 2. **Manali Sach Pass Route** - ₹18,999 (7 Days, Advanced)
+   - Infamous Sach Pass at 4,420m
+   - Remote valleys and glacial rivers
+   - Best season: Mid-July to Late September
+
+3. **Spiti Valley Expedition** - ₹42,000 (9 Days, Advanced)
+   - World's highest post office in Hikkim
+   - Asia's tallest bridge (Chicham)
+   - Stunning Chandratal Lake
+   - Ancient cliff-side monasteries
+   - Best season: May to September
 
 ### 3. Security Policies (RLS)
 - Public read access enabled
