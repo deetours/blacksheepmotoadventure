@@ -26,11 +26,11 @@ export function TripsContent() {
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-            Expeditions
+          <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+            Choose Your Test.
           </h1>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
-            Choose your terrain. Each expedition is designed, tested, and led by riders who have crossed these passes hundreds of times.
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/70">
+            Each expedition is forged. Tested. Led by riders who have crossed these passes hundreds of times. Not for everyone. For those ready to be changed.
           </p>
         </ScrollReveal>
 

@@ -23,10 +23,10 @@ import {
 type BookingType = "trip" | "bike" | "stay" | "4x4" | ""
 
 const bookingTypes = [
-  { value: "trip" as BookingType, label: "Expedition", icon: Map },
-  { value: "bike" as BookingType, label: "Bike Rental", icon: Bike },
-  { value: "stay" as BookingType, label: "Stay", icon: Home },
-  { value: "4x4" as BookingType, label: "4x4 / Luxury", icon: Car },
+  { value: "trip" as BookingType, label: "Choose Your Test", icon: Map },
+  { value: "bike" as BookingType, label: "Select Your Machine", icon: Bike },
+  { value: "stay" as BookingType, label: "Pick Your Basecamp", icon: Home },
+  { value: "4x4" as BookingType, label: "Command the Terrain", icon: Car },
 ]
 
 export function BookingContent() {
@@ -84,12 +84,10 @@ export function BookingContent() {
             <Check className="h-8 w-8 text-primary" />
           </div>
           <h2 className="mt-8 font-heading text-3xl uppercase tracking-wider text-foreground">
-            Booking Request Sent
+            You're In. Prepare for Elevation.
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            We have received your booking request. Our team will confirm
-            availability and reach out within 24 hours with payment details and
-            next steps.
+          <p className="mt-4 text-sm leading-relaxed text-foreground/70">
+            You've made your choice. Now trust it. We'll confirm availability, send payment details, and prepare you for what's ahead. You're not just booking. You're committing.
           </p>
           <a
             href="tel:+919876543210"
@@ -107,11 +105,11 @@ export function BookingContent() {
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
       <div className="mx-auto max-w-3xl">
         <ScrollReveal>
-          <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-            Book Now
+          <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+            You've Decided. Now Choose Wisely.
           </h1>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Select your adventure, pick your dates, and we will handle the rest.
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/70">
+            Every choice shapes your expedition. Select your test, your machine, your basecamp. Then commit.
           </p>
         </ScrollReveal>
 

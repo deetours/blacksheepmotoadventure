@@ -67,7 +67,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)"],
-        heading: ["var(--font-oswald)"],
+        heading: ["var(--font-bebas)"],
         serif: ["var(--font-playfair)"],
       },
       borderRadius: {

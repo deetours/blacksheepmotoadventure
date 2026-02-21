@@ -20,12 +20,11 @@ export function StaysContent() {
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-            Stays
+          <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+            Pick Your Basecamp.
           </h1>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
-            Rest where the mountains begin. Every stay is within walking distance
-            of our workshop and basecamp in Manali and Vashist.
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/70">
+            Between the road and the mountains. Close to our workshop. Where riders sleep, eat, and become brothers. Not luxury. Real.
           </p>
         </ScrollReveal>
 

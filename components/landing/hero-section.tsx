@@ -23,43 +23,55 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-          className="font-heading text-6xl font-bold uppercase leading-none tracking-wider text-foreground md:text-8xl lg:text-9xl"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          Blacksheep
+          <p className="text-sm uppercase tracking-[0.3em] text-primary/80">Expedition</p>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.4, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+          className="mt-6 font-heading text-5xl font-bold uppercase leading-none tracking-widest text-foreground md:text-7xl lg:text-8xl"
+        >
+          Some Roads
+          <br />
+          Don't Want
+          <br />
+          You There.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-          className="mt-4 font-heading text-xl uppercase tracking-[0.3em] text-primary md:text-2xl"
+          transition={{ duration: 1, delay: 1.0, ease: [0.25, 0.4, 0.25, 1] }}
+          className="mt-8 font-heading text-lg uppercase tracking-[0.3em] text-primary md:text-xl"
         >
-          Ride The Altitude
+          Good. Neither do we.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.3 }}
-          className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground md:text-base"
+          transition={{ duration: 1, delay: 1.6 }}
+          className="mt-8 max-w-md text-sm leading-relaxed text-foreground/70 md:text-base"
         >
-          Himalayan motorcycle expeditions built for those who don't follow roads.
+          Unfiltered Himalayan motorcycle expeditions. Not for tourists. Not for comfort. For those who believe roads should change people.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.8 }}
+          transition={{ duration: 0.8, delay: 2.2 }}
         >
           <Link
             href="/trips"
-            className="mt-10 inline-block border border-primary bg-primary/10 px-10 py-4 font-heading text-sm uppercase tracking-[0.2em] text-primary transition-all duration-500 hover:bg-primary hover:text-foreground"
+            className="mt-12 inline-block border border-primary bg-primary/10 px-12 py-4 font-heading text-xs uppercase tracking-[0.3em] text-primary transition-all duration-500 hover:bg-primary hover:text-background"
           >
-            Explore Rides
+            Enter the Ride
           </Link>
         </motion.div>
       </div>

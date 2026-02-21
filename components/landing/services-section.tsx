@@ -7,39 +7,42 @@ import { motion } from "framer-motion"
 
 const services = [
   {
-    title: "Motorcycle Expeditions",
-    description: "Guided group rides across the highest passes",
+    title: "Road Captains, Not Tour Guides",
+    description: "Forged by 10+ years in the Himalayas. Unfiltered riding with trust under pressure.",
     image: "/images/expedition.jpg",
     href: "/trips",
   },
   {
-    title: "Self Ride Rentals",
-    description: "Well-maintained machines, your own route",
-    image: "/images/self-ride.jpg",
+    title: "Machines That Survive The Mountain",
+    description: "Altitude-tested, battle-worn, mechanically perfect. Confidence at 18,000 feet.",
+    image: "/images/bike-closeup.jpg",
     href: "/bikes",
   },
   {
-    title: "4x4 Adventure Trails",
-    description: "Command the terrain on four wheels",
-    image: "/images/4x4-adventure.jpg",
-    href: "/4x4-luxury",
+    title: "Routes That Aren't Designed For Comfort",
+    description: "Raw passes, earned respect, zero handholding. This is the real expedition.",
+    image: "/images/spiti.jpg",
+    href: "/trips",
   },
   {
-    title: "Luxury Expeditions",
-    description: "Premium stays, private routes, zero compromise",
-    image: "/images/luxury-expedition.jpg",
-    href: "/4x4-luxury",
+    title: "Backup That Actually Backs You",
+    description: "Full-time mechanic, spare parts, oxygen, 4x4 support. Because at altitude, trust is not optional.",
+    image: "/images/4x4-adventure.jpg",
+    href: "/trips",
   },
 ]
 
 export function ServicesSection() {
   return (
-    <section className="noise-overlay bg-charcoal px-6 py-24 lg:px-12">
+    <section className="noise-overlay bg-charcoal px-6 py-28 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h2 className="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-primary">
-            What We Do
+          <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
+            Expedition Riding
           </h2>
+          <p className="mt-6 max-w-2xl font-heading text-4xl uppercase leading-tight tracking-wider text-foreground md:text-5xl">
+            This Is Expedition Riding.
+          </p>
         </ScrollReveal>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">

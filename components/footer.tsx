@@ -11,8 +11,8 @@ export function Footer() {
             <span className="font-heading text-2xl font-bold uppercase tracking-wider text-foreground">
               Blacksheep
             </span>
-            <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Himalayan motorcycle expeditions built for those who don't follow roads. Based in Manali & Vashist.
+            <p className="max-w-xs text-sm leading-relaxed text-foreground/70">
+              Unfiltered Himalayan expeditions. Not for tourists. For those ready to be changed. Forged in the mountains. Earned through riding.
             </p>
           </div>
 

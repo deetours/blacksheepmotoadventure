@@ -10,8 +10,11 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-            From The Road
+            Rider Stories
           </h2>
+          <p className="mt-6 max-w-2xl font-heading text-3xl uppercase leading-tight tracking-wider text-foreground md:text-4xl">
+            Unfiltered. Raw. Real.
+          </p>
         </ScrollReveal>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">

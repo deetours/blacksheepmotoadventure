@@ -54,27 +54,27 @@ const timeline = [
 const values = [
   {
     icon: Shield,
-    title: "Safety First",
+    title: "Unfiltered",
     description:
-      "4x4 backup on every expedition. Oxygen, first aid, satellite phone. Our road captains are trained in high-altitude emergency response.",
-  },
-  {
-    icon: Wrench,
-    title: "Mechanical Integrity",
-    description:
-      "47-point inspection before every ride. Fresh fluids, calibrated brakes, checked electricals. If it is not perfect, it does not leave the garage.",
+      "No safe itineraries pretending to be wild. No Instagram checkpoints. No watered-down routes. You ride what we ride. Raw passes. Real altitude. Earned respect.",
   },
   {
     icon: Heart,
-    title: "No Rider Left Behind",
+    title: "Earned",
     description:
-      "Our core promise. Whether your bike breaks down at 18,000 feet or you need to rest -- the group waits. The backup vehicle is always there.",
+      "Comfort is expensive. Growth is priceless. You don't coast through these mountains. You climb. You struggle. You become stronger. That's the trade.",
   },
   {
-    icon: Compass,
-    title: "Authentic Experience",
+    icon: Users,
+    title: "Brotherhood",
     description:
-      "We do not manufacture adventure. We know these mountains. We live here. What you get is real -- the roads, the food, the silence, the challenge.",
+      "The mountains don't care who you are. The altitude strips titles and egos. Here, you're a rider. Your crew is sacred. No one gets left behind.",
+  },
+  {
+    icon: Mountain,
+    title: "Scarcity",
+    description:
+      "Some roads reject people. We respect that. Expeditions are limited. Routes are earned. Not everyone makes it. Those who do understand they survived something real.",
   },
 ]
 
@@ -99,11 +99,11 @@ export function AboutContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-                Our Story
+              <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+                We Believe Roads Should Change People.
               </h1>
-              <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/70">
-                Two riders. One garage. A decade of Himalayan obsession.
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/70">
+                This isn't our company. It's a movement. Built by people who refuse to accept that adventure has to be comfortable.
               </p>
             </motion.div>
           </div>
@@ -115,29 +115,23 @@ export function AboutContent() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-start gap-16 lg:grid-cols-2">
             <ScrollReveal>
-              <div className="flex flex-col gap-6">
-                <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-                  The Beginning
-                </h2>
-                <p className="text-base leading-relaxed text-muted-foreground">
-                  Blacksheep was never a business plan. It was a compulsion. Kshitiz
-                  &ldquo;Bantu&rdquo; quit his job, moved to Manali, and started
-                  riding the Himalayas full-time. When other riders started asking
-                  him to lead them through the same passes, he realized he had
-                  accidentally started a company.
+              <div className="flex flex-col gap-8">
+                <div>
+                  <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
+                    War Cry
+                  </h2>
+                  <h3 className="mt-6 font-heading text-5xl uppercase leading-tight tracking-wider text-foreground md:text-6xl">
+                    We Are Not For Tourists.
+                  </h3>
+                </div>
+                <p className="text-base leading-relaxed text-foreground/70 md:text-lg">
+                  Blacksheep was never a business plan. It was a rebellion. Kshitiz quit the corporate machine, moved to Manali, and started riding the Himalayas obsessively. When other riders asked him to lead them through the same passes, he realized something: adventure tourism had turned mountains into instagram backdrops. He decided to flip the script.
                 </p>
-                <p className="text-base leading-relaxed text-muted-foreground">
-                  Raman joined two years later -- a proper engineer who could
-                  rebuild an engine by ear. Together, they established the two
-                  pillars of Blacksheep: riders who actually know these mountains,
-                  and machines that never fail on them.
+                <p className="text-base leading-relaxed text-foreground/70 md:text-lg">
+                  Raman arrived next -- a trained engineer who rebuilds engines by ear and refuses to compromise on mechanical integrity. Together, they built something uncompromising: expeditions led by riders who actually live here, on machines that actually survive here.
                 </p>
-                <p className="text-base leading-relaxed text-muted-foreground">
-                  The name &ldquo;Blacksheep&rdquo; was chosen because every rider
-                  who comes here is someone who has strayed from the expected path.
-                  The corporate job, the safe life, the planned future -- they left
-                  all of it for a motorcycle and a mountain road. We are the black
-                  sheep. And we ride.
+                <p className="text-base leading-relaxed text-foreground/70 md:text-lg">
+                  Every person on a Blacksheep expedition is someone who strayed from the expected path. The safe job. The planned future. The comfort. They left it all for a motorcycle and a mountain road. We are the black sheep. And we ride unfiltered.
                 </p>
               </div>
             </ScrollReveal>
@@ -173,10 +167,10 @@ export function AboutContent() {
         <div className="mx-auto max-w-7xl">
           <ScrollReveal>
             <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-              What We Stand For
+              Expedition Manifesto
             </h2>
-            <p className="mt-2 font-heading text-3xl uppercase tracking-wider text-foreground">
-              Our Principles
+            <p className="mt-6 max-w-2xl font-heading text-4xl uppercase leading-tight tracking-wider text-foreground md:text-5xl">
+              The Four Pillars.
             </p>
           </ScrollReveal>
 
@@ -203,10 +197,10 @@ export function AboutContent() {
         <div className="mx-auto max-w-7xl">
           <ScrollReveal>
             <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-              The Journey
+              Since 2014
             </h2>
-            <p className="mt-2 font-heading text-3xl uppercase tracking-wider text-foreground">
-              How We Got Here
+            <p className="mt-6 max-w-2xl font-heading text-4xl uppercase leading-tight tracking-wider text-foreground md:text-5xl">
+              The Climb.
             </p>
           </ScrollReveal>
 
@@ -259,23 +253,23 @@ export function AboutContent() {
       </section>
 
       {/* CTA */}
-      <section className="flex flex-col items-center px-6 py-24 text-center">
+      <section className="bg-charcoal px-6 py-32 text-center">
         <ScrollReveal>
-          <p className="font-serif text-2xl italic text-foreground/80 md:text-3xl">
-            The mountains are waiting.
+          <p className="font-heading text-4xl uppercase leading-tight tracking-wider text-foreground md:text-6xl">
+            You Know What You Want. The Question Is: Do You Have The Grit?
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link
               href="/trips"
-              className="border border-primary bg-primary px-10 py-4 font-heading text-sm uppercase tracking-widest text-foreground transition-colors hover:bg-primary/90"
+              className="border border-primary bg-primary/10 px-12 py-4 font-heading text-xs uppercase tracking-[0.3em] text-primary transition-all duration-500 hover:bg-primary hover:text-background"
             >
-              View Expeditions
+              Prove Yourself
             </Link>
             <Link
               href="/contact"
-              className="border border-border px-10 py-4 font-heading text-sm uppercase tracking-widest text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="border border-primary px-12 py-4 font-heading text-xs uppercase tracking-[0.3em] text-primary transition-colors hover:bg-primary/10"
             >
-              Get In Touch
+              Start The Conversation
             </Link>
           </div>
         </ScrollReveal>

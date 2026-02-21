@@ -21,11 +21,11 @@ export function BikesContent() {
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-            Bike Rentals
+          <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+            Select Your Machine.
           </h1>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
-            Every machine is inspected by our lead engineer before it leaves the garage. Full mechanical check, fresh fluids, calibrated controls.
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/70">
+            Altitude-tested. Battle-worn. Mechanically perfect. Every machine survives what kills lesser bikes. Raman ensures it. You trust it.
           </p>
         </ScrollReveal>
 

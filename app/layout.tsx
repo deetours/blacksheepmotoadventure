@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter, Oswald, Playfair_Display } from "next/font/google"
+import { Inter, Bebas_Neue, Playfair_Display } from "next/font/google"
 
 import "./globals.css"
 
@@ -9,10 +9,10 @@ const inter = Inter({
   variable: "--font-inter",
 })
 
-const oswald = Oswald({
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  variable: "--font-oswald",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-bebas",
+  weight: ["400"],
 })
 
 const playfair = Playfair_Display({
@@ -22,15 +22,15 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Blacksheep Moto Adventure | Ride The Altitude",
+  title: "Blacksheep Expedition | Some Roads Don't Want You There.",
   description:
-    "Himalayan motorcycle expeditions, bike rentals, 4x4 adventure tours, and luxury expeditions across Ladakh, Spiti, and Zanskar. Based in Manali.",
+    "Unfiltered Himalayan motorcycle expeditions. Not for tourists. Road captains, altitude-tested machines, routes that demand respect. Ladakh, Spiti, Zanskar. Earned riding.",
   keywords: [
-    "Ladakh bike trip",
-    "Manali motorcycle rental",
-    "Himalayan expedition",
-    "Spiti Valley ride",
-    "adventure motorcycle India",
+    "motorcycle expedition Himalayas",
+    "Ladakh expedition ride",
+    "hardcore adventure riding",
+    "Spiti Valley expedition",
+    "mountain motorcycle expedition India",
   ],
 }
 
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${oswald.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${bebasNeue.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )

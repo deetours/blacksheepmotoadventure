@@ -5,10 +5,10 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import { Wrench, Shield, Mountain, Users } from "lucide-react"
 
 const stats = [
-  { icon: Mountain, value: "10+", label: "Years in the Himalayas" },
-  { icon: Shield, value: "4x4", label: "Dedicated Backup Support" },
-  { icon: Wrench, value: "100%", label: "Pre-Ride Inspection Rate" },
-  { icon: Users, value: "2000+", label: "Riders Trusted Us" },
+  { icon: Mountain, value: "10+", label: "Years Unfiltered" },
+  { icon: Users, value: "2000+", label: "Riders Transformed" },
+  { icon: Wrench, value: "100%", label: "Machines Tested" },
+  { icon: Shield, value: "4x4", label: "Backup That Shows Up" },
 ]
 
 export function ProofSection() {
@@ -17,10 +17,10 @@ export function ProofSection() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-            Why Us
+            Arsenal
           </h2>
-          <p className="mt-4 max-w-xl font-heading text-3xl uppercase leading-tight tracking-wider text-foreground md:text-5xl">
-            Built by Riders. Maintained by Engineers.
+          <p className="mt-6 max-w-2xl font-heading text-4xl uppercase leading-tight tracking-wider text-foreground md:text-5xl">
+            Forged in the Himalayas. Earned, Not Given.
           </p>
         </ScrollReveal>
 
@@ -52,14 +52,11 @@ export function ProofSection() {
           {/* Content */}
           <ScrollReveal direction="right">
             <div className="flex flex-col gap-6">
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                Kshitiz &ldquo;Bantu&rdquo; has been riding the Himalayas for over a decade. 
-                Raman ensures every machine is mechanically perfect before it leaves the garage. 
-                Together, they built Blacksheep on one principle: no rider gets left behind.
+              <p className="text-sm leading-relaxed text-foreground/70 md:text-base">
+                Kshitiz &ldquo;Bantu&rdquo; has been riding these passes for 10+ years. Not as a tour operator. As a rider. Raman builds and maintains machines that survive what kills lesser bikes. Together, they didn't create a business. They created a movement.
               </p>
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                Every expedition rides with a dedicated 4x4 backup vehicle carrying a full-time mechanic, 
-                spare parts, first aid, and oxygen. Because at 18,000 feet, trust is not optional.
+              <p className="text-sm leading-relaxed text-foreground/70 md:text-base">
+                Every expedition has a full-time mechanic in a 4x4 backup vehicle. Spare parts. Oxygen. Real support. Not because we're nice. Because at 18,000 feet, trust isn't a feeling. It's a requirement.
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-6">

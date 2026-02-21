@@ -9,24 +9,24 @@ import { Shield, MapPin, Crown, Car, Mountain, Star } from "lucide-react"
 const offerings = [
   {
     icon: Car,
-    title: "4x4 Adventure Trails",
+    title: "Command The Terrain",
     description:
-      "Toyota Fortuner and Thar convoys through the most demanding terrain in the Himalayas. Professional drivers who know every switchback.",
-    features: ["Experienced drivers", "Off-road rated vehicles", "Full support crew", "Custom routes available"],
+      "4x4 convoys through terrain that rejects casual tourists. Professional drivers forged in the mountains. Real off-roading. Real challenge.",
+    features: ["Drivers with 10+ years experience", "Altitude-tested 4x4 vehicles", "Full mechanical backup", "Routes that demand respect"],
   },
   {
     icon: Crown,
-    title: "Luxury Expeditions",
+    title: "Earned Luxury",
     description:
-      "Premium SUVs, handpicked stays, private itineraries. The Himalayan experience without the roughness. Comfort at altitude.",
-    features: ["Premium accommodations", "Private chef", "Personal guide", "Flexible schedule"],
+      "Premium stays. Private routes. Real guides. Not tourist comfort. The Himalayan experience for those who've proven they can handle it.",
+    features: ["Hand-picked mountain lodges", "Private expedition leader", "Flexibility to explore", "Ultimate basecamp experience"],
   },
   {
     icon: MapPin,
-    title: "Custom Itineraries",
+    title: "Conviction Expeditions",
     description:
-      "Tell us where you want to go. We will build the route, arrange the vehicles, book the stays, and handle every detail.",
-    features: ["Fully customizable", "Corporate retreats", "Family friendly options", "Photography tours"],
+      "Dream it. We build it. Custom routes, hand-curated stays, private support. For those who know what they want and refuse to compromise.",
+    features: ["Fully customized", "Corporate expedition teams", "Private expedition crew", "Absolute flexibility"],
   },
 ]
 
@@ -75,8 +75,8 @@ export function LuxuryContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-                4x4 & Luxury
+              <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+                Command The Terrain.
               </h1>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/70">
                 Not everyone rides. Some command the terrain differently.

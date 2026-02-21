@@ -48,9 +48,9 @@ export function Navigation() {
           ))}
           <Link
             href="/booking"
-            className="flex items-center gap-2 border border-primary bg-primary/10 px-5 py-2 font-heading text-sm uppercase tracking-widest text-primary transition-colors hover:bg-primary hover:text-foreground"
+            className="border border-primary bg-primary/10 px-6 py-2.5 font-heading text-xs uppercase tracking-[0.3em] text-primary transition-all duration-500 hover:bg-primary hover:text-background"
           >
-            Book Now
+            Commit
           </Link>
         </div>
 
@@ -107,9 +107,9 @@ export function Navigation() {
                 <Link
                   href="/booking"
                   onClick={() => setOpen(false)}
-                  className="mt-4 border border-primary px-8 py-3 font-heading text-xl uppercase tracking-widest text-primary transition-colors hover:bg-primary hover:text-foreground"
+                  className="mt-4 border border-primary bg-primary/10 px-8 py-3 font-heading text-lg uppercase tracking-widest text-primary transition-all duration-500 hover:bg-primary hover:text-background"
                 >
-                  Book Now
+                  Commit
                 </Link>
               </motion.div>
               <motion.a

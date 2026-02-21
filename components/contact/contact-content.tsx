@@ -26,12 +26,11 @@ export function ContactContent() {
     <div className="noise-overlay min-h-screen bg-charcoal px-6 pt-28 pb-24 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h1 className="font-heading text-5xl font-bold uppercase tracking-wider text-foreground md:text-7xl">
-            Contact
+          <h1 className="font-heading text-5xl font-bold uppercase tracking-widest text-foreground md:text-7xl">
+            Talk to Someone Who Rides.
           </h1>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
-            Questions about an expedition? Need a custom itinerary? Want to rent a
-            bike? Drop us a message or just call.
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/70">
+            Questions? Concerns? Good. Ask them all. We don't automated responses. We believe in conversations with real riders who understand what you're asking for.
           </p>
         </ScrollReveal>
 
@@ -139,7 +138,7 @@ export function ContactContent() {
           <ScrollReveal delay={0.2}>
             <div className="border border-border p-8">
               <h2 className="font-heading text-sm uppercase tracking-[0.3em] text-primary">
-                Send A Message
+                Start The Conversation
               </h2>
 
               {submitted ? (
@@ -152,10 +151,10 @@ export function ContactContent() {
                     <Send className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="mt-6 font-heading text-xl uppercase tracking-wider text-foreground">
-                    Message Sent
+                    Message Received.
                   </h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    We will get back to you within 24 hours. Ride safe until then.
+                  <p className="mt-3 text-sm text-foreground/70">
+                    We'll reach out within 24 hours. Real conversations with real riders. Prepare your questions.
                   </p>
                 </motion.div>
               ) : (
@@ -268,9 +267,9 @@ export function ContactContent() {
 
                   <button
                     type="submit"
-                    className="mt-2 w-full border border-primary bg-primary py-4 font-heading text-sm uppercase tracking-widest text-foreground transition-colors hover:bg-primary/90"
+                    className="mt-2 w-full border border-primary bg-primary/10 py-4 font-heading text-xs uppercase tracking-[0.3em] text-primary transition-all duration-500 hover:bg-primary hover:text-background"
                   >
-                    Send Message
+                    Start The Conversation
                   </button>
                 </form>
               )}
