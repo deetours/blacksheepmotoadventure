@@ -49,15 +49,11 @@ export default async function TripPage({ params }: TripPageProps) {
   }
 
   return (
-    <main>
+    <main className="min-h-screen bg-charcoal">
       <Navigation />
-      <div className="bg-charcoal px-6 py-12">
-        <div className="mx-auto max-w-6xl">
-          <Suspense fallback={<div className="text-center text-muted-foreground">Loading expedition details...</div>}>
-            <TripDetail trip={trip} />
-          </Suspense>
-        </div>
-      </div>
+      <Suspense fallback={<div className="flex min-h-[50vh] items-center justify-center text-muted-foreground">Loading expedition details...</div>}>
+        <TripDetail trip={trip} />
+      </Suspense>
       <Footer />
     </main>
   )
