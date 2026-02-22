@@ -112,11 +112,11 @@ export function TripDetail({ trip }: TripDetailProps) {
             {/* Inclusions */}
             <div>
               <h3 className="mb-4 font-heading text-lg uppercase">What's Included</h3>
-              <ul className=\"space-y-3\">
+              <ul className="space-y-3">
                 {trip.inclusions.map((item, idx) => (
-                  <li key={idx} className=\"flex gap-3\">
-                    <CheckCircle className=\"h-5 w-5 flex-shrink-0 text-primary\" />
-                    <span className=\"text-sm\">{item}</span>
+                  <li key={idx} className="flex gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                    <span className="text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -139,9 +139,9 @@ export function TripDetail({ trip }: TripDetailProps) {
           {/* Best For */}
           <div>
             <h3 className="mb-4 font-heading text-lg uppercase">Who Is This For</h3>
-            <div className=\"flex flex-wrap gap-2\">
+            <div className="flex flex-wrap gap-2">
               {trip.bestFor.map((item, idx) => (
-                <span key={idx} className=\"rounded-full border border-primary bg-primary/10 px-4 py-2 text-sm font-semibold text-primary\">
+                <span key={idx} className="rounded-full border border-primary bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
                   {item}
                 </span>
               ))}
@@ -166,7 +166,7 @@ export function TripDetail({ trip }: TripDetailProps) {
       <div className="rounded-lg border-2 border-primary bg-primary/5 p-8 text-center">
         <h2 className="mb-2 font-heading text-2xl uppercase">Ready for this expedition?</h2>
         <p className="mb-6 text-muted-foreground">Starting from ₹{trip.price.toLocaleString()} per person</p>
-        <Button size=\"lg\" className=\"rounded\">
+        <Button size="lg" className="rounded">
           Book This Expedition
         </Button>
       </div>
