@@ -11,7 +11,7 @@ export function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bike.jpg"
+          src="/images/hero-black.png"
           alt="Motorcycle on Himalayan mountain road at dawn"
           fill
           className="object-cover"

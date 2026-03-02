@@ -30,7 +30,7 @@ export function ProofSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src="/images/team-riders.jpg"
+                  src="/images/team-riders.png"
                   alt="Blacksheep team - Kshitiz and Raman"
                   fill
                   className="object-cover"
@@ -39,7 +39,7 @@ export function ProofSection() {
               </div>
               <div className="relative mt-8 aspect-[3/4] overflow-hidden">
                 <Image
-                  src="/images/workshop.jpg"
+                  src="/images/workshop1.jpg"
                   alt="Motorcycle workshop maintenance"
                   fill
                   className="object-cover"

@@ -84,7 +84,7 @@ export function AboutContent() {
       {/* Hero */}
       <section className="relative flex h-[70vh] items-end">
         <Image
-          src="/images/team-riders.jpg"
+          src="/images/team-riders.png"
           alt="Blacksheep team - Kshitiz and Raman"
           fill
           className="object-cover"
@@ -140,7 +140,7 @@ export function AboutContent() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <Image
-                    src="/images/workshop.jpg"
+                    src="/images/workshop1.jpg"
                     alt="Blacksheep motorcycle workshop"
                     fill
                     className="object-cover"
